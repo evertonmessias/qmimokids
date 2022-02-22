@@ -1,0 +1,74 @@
+.settings-qmimokids, .about-qmimokids{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 99%;
+    min-height: 500px;
+    border: 1px solid #888;
+    margin-top: 15px;
+    margin-left: -5px;
+    padding: 20px;
+}
+.settings-qmimokids .title, .about-qmimokids .title{
+    color: #f00;
+    
+}
+.settings-qmimokids hr, .about-qmimokids hr{
+    background-color: #bbb !important;
+    border: 1px solid #bbb !important;
+}
+.settings-qmimokids table,.imagens-produtos table{
+    width: 65em;
+    border-spacing: 0;
+}
+
+.settings-qmimokids .wp-editor-wrap{
+    width: 150%;
+}
+
+.settings-qmimokids table img, .imagens-produtos table img{
+    height: 100%;   
+}
+
+.settings-qmimokids input[type=number]{
+    width: 7em;
+    font-weight: 400;
+}
+.settings-qmimokids input[type=email],.settings-qmimokids input[type=text]{
+    width: 40em;
+    font-weight: 400;
+}
+.settings-qmimokids textarea{
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: -3px;
+}
+
+.settings-qmimokids table td:nth-child(1),
+.settings-qmimokids table td:nth-child(3),
+.imagens-produtos table td:nth-child(1),
+.imagens-produtos table td:nth-child(3){
+    width: 4em;
+}
+
+.settings-qmimokids table td:nth-child(1) div,
+.imagens-produtos table td:nth-child(1) div{
+    text-align: center !important;
+    font-weight: 600;
+}
+.settings-qmimokids table td:nth-child(2),
+.imagens-produtos table td:nth-child(2){
+    width: 40em;   
+}
+.settings-qmimokids table td:nth-child(2) input,
+.imagens-produtos table td:nth-child(2) input{
+    width: 100%;
+}
+
+#heateor_sss_meta{
+    display: none;
+}
+
+.meta-box-sortables input.postmeta-projetos,.meta-box-sortables input.postmeta-post{
+    width: 100%;
+}
