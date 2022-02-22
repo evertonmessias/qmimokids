@@ -1,0 +1,2 @@
+# qmimokids
+Loja Qmimokids
