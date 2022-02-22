@@ -739,6 +739,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-align: center;
 }
 
 .featured-services .title a {
@@ -757,6 +758,12 @@ section {
 
 .featured-services .icon-box:hover .icon i {
   color: #fff;
+}
+.featured-services .icon img{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-height: 80px;
 }
 
 /*--------------------------------------------------------------
