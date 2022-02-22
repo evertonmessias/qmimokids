@@ -1,3 +1,7 @@
+function mostrar(x){
+  $(".filter-"+x).show();
+}
+
 !(function($) {
   "use strict";
 
