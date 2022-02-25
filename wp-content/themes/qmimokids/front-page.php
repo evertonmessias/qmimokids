@@ -69,7 +69,7 @@
   <section id="portfolio" class="portfolio section-bg">
     <div class="container" data-aos="fade-up">
       <?php
-      $categories = get_terms('produtos_categories', array('order' => 'DESC'));
+      $categories = get_terms('product_cat', array('order' => 'DESC'));
       foreach ($categories as $category) {
         $cat_portfolio[] = $category->slug;
       }
@@ -94,26 +94,27 @@
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <?php foreach ($categories as $category) {
-          //the_post_thumbnail_url('full')				
+        <?php foreach ($categories as $category) {			
           $args = array(
-            'post_type' => 'produtos',
-            'produtos_categories' => $category->slug,
+            'post_type' => 'product',
+            'product_cat' => $category->slug,
             'posts_per_page' => 100
           );
           $loop = new WP_Query($args);
           while ($loop->have_posts()) {
             $loop->the_post();
+            $wc_product = new WC_product(get_the_ID());
+            $array_images = $wc_product->get_gallery_image_ids();                
         ?>
             <div class="col-lg-4 portfolio-item filter-<?php echo $category->slug; ?>">
-              <img src="<?php echo get_post_meta($post->ID, 'produtos_imagem_1', true); ?>" class="img-fluid" title="<?php echo get_the_title() ?>">
+              <img src="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" class="img-fluid" title="<?php echo get_the_title() ?>">
               <div class="portfolio-info">
                 <h4><?php the_title() ?></h4>
-                <a href="<?php echo get_post_meta($post->ID, 'produtos_imagem_1', true); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo get_the_title() ?>"><i class="bx bx-search"></i></a>
+                <a href="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo get_the_title() ?>"><i class="bx bx-search"></i></a>
                 <a href="<?php the_permalink() ?>" class="details-link" title="Link"><i class="bx bx-shopping-bag"></i></a>
               </div>
             </div>
-        <?php }
+        <?php }wp_reset_postdata();
         } ?>
       </div>
     </div>
@@ -157,7 +158,7 @@
     <div class="container" data-aos="fade-up">
 
       <?php
-      $categories = get_terms('produtos_categories', array('order' => 'DESC'));
+      $categories = get_terms('product_cat', array('order' => 'DESC'));
       ?>
 
       <div class="gallery-slider swiper">
@@ -165,18 +166,20 @@
 
           <?php foreach ($categories as $category) {
             $args = array(
-              'post_type' => 'produtos',
-              'produtos_categories' => $category->slug,
+              'post_type' => 'product',
+              'product_cat' => $category->slug,
               'posts_per_page' => 100
             );
             $loop = new WP_Query($args);
             while ($loop->have_posts()) {
               $loop->the_post();
+              $wc_product = new WC_product(get_the_ID());
+              $array_images = $wc_product->get_gallery_image_ids(); 
           ?>
 
               <div class="swiper-slide">
-                <a class="gallery-lightbox" href="<?php echo get_post_meta($post->ID, 'produtos_imagem_1', true); ?>">
-                  <img src="<?php echo get_post_meta($post->ID, 'produtos_imagem_1', true); ?>" class="img-fluid" alt="">
+                <a class="gallery-lightbox" href="<?php echo wp_get_attachment_url( $array_images[0] ); ?>">
+                  <img src="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" class="img-fluid" alt="">
                 </a>
                 <p><?php echo get_the_title() ?></p>
                 <a href="<?php the_permalink() ?>" class="btn-link" title="Link">Leia mais</a>

@@ -72,10 +72,7 @@ class produtos
 	}	
 
 	public function activate()
-	{
-		remove_role('subscriber');
-		remove_role('contributor');
-		remove_role('author');
+	{		
 		$this->create_custom_post_type_produtos();
 		$this->create_produtos_taxonomies();
 		flush_rewrite_rules();

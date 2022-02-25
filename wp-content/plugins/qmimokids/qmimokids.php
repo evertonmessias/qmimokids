@@ -19,12 +19,12 @@ if (!defined('ABSPATH')) {
 include ABSPATH . '/wp-content/plugins/qmimokids/includes/functions.php';
 
 // TYPES ************************************************
-include ABSPATH . '/wp-content/plugins/qmimokids/includes/types/produtos.php';
+//include ABSPATH . '/wp-content/plugins/qmimokids/includes/types/produtos.php';
 
 // SETTINGS ************************************************
 include ABSPATH . '/wp-content/plugins/qmimokids/includes/settings.php';
 
-// OBJECTS *************************************************
+/* OBJECTS *************************************************
 $produtos = new produtos();
 
 register_activation_hook(__FILE__, array(    
@@ -34,3 +34,4 @@ register_activation_hook(__FILE__, array(
 register_deactivation_hook(__FILE__, array(
     $produtos, 'deactivate'   
 ));
+*/

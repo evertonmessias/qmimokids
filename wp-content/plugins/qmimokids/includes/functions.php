@@ -33,6 +33,20 @@ function wpdocs_remove_menus()
 add_action('admin_menu', 'wpdocs_remove_menus');
 
 
+//***************** Add Remove Roles
+function add_remove_roles()
+{
+	//remove_role('subscriber');
+	//remove_role('contributor');
+	//remove_role('author');
+	add_role('subscriber','Subscriber');
+	add_role('contributor','Contributor');
+	add_role('author','Author');	
+}
+add_action('admin_menu', 'add_remove_roles');
+		
+
+
 // ***************** Add style & script for Admin
 function style_and_script()
 {

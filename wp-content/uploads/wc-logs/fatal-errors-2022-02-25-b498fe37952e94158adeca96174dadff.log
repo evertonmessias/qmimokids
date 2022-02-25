@@ -1,0 +1,112 @@
+2022-02-25T20:32:37+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_image_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:77
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 77
+
+2022-02-25T20:32:53+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_image_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:77
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 77
+
+2022-02-25T20:33:46+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:77
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 77
+
+2022-02-25T20:35:44+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_image_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:78
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 78
+
+2022-02-25T20:42:49+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:79
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 79
+
+2022-02-25T20:42:52+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:79
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 79
+
+2022-02-25T20:43:30+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:79
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 79
+
+2022-02-25T20:43:41+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:45:02+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:51:55+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:52:25+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:53:28+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:53:41+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
+2022-02-25T20:54:17+00:00 CRITICAL Uncaught Error: Call to a member function get_gallery_attachment_ids() on null in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php:80
+Stack trace:
+#0 /var/www/qmimokids/wp-includes/template-loader.php(106): include()
+#1 /var/www/qmimokids/wp-blog-header.php(19): require_once('/var/www/qmimok...')
+#2 /var/www/qmimokids/index.php(17): require('/var/www/qmimok...')
+#3 {main}
+  thrown in /var/www/qmimokids/wp-content/themes/qmimokids/front-page.php on line 80
+
