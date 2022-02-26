@@ -180,3 +180,15 @@
     padding-top: 20px;
     padding-left: 10px;    
 }
+
+.woocommerce table.cart img{
+    display: none;
+}
+.woocommerce .col-1,.woocommerce .col-2{
+    max-width: 48% !important;
+}
+.woocommerce form .form-row input,.woocommerce form .form-row textarea{
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;    
+}

@@ -58,7 +58,7 @@
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
 					<li class="active"><a href="/">Inicio</a></li>
-					<li><a href="/#portfolio">Produtos</a></li>	
+					<li><a href="/#product">Produtos</a></li>	
 					<li><a href="/#about">Sobre</a></li>
 					<li><a href="/#contact">Contato</a></li>
 

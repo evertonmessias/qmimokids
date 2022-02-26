@@ -7,8 +7,17 @@
                 <h2><?php the_title() ?></h2>
                 <ol>
                     <li><a href="/">home</a></li>
-                    <li><a href="/shop">shop</a></li>                    
-                    <li><?php echo get_the_title(); ?></li>
+                    <li>
+                        <?php
+                        if (url_active()[2] == "") echo url_active()[1];
+                        else echo "<a href='/" . url_active()[1] . "'>" . url_active()[1] . "</a>";
+                        ?>
+                    </li>
+                    <li>
+                        <?php
+                        if (url_active()[2] != "") echo url_active()[2];
+                        ?>
+                    </li>
                 </ol>
             </div>
         </div>
@@ -24,18 +33,18 @@
                     $wc_product = new WC_product(get_the_ID());
                     $array_images = $wc_product->get_gallery_image_ids();
                     foreach ($array_images as $image) { ?>
-                        <img src="<?php echo wp_get_attachment_url($image); ?>" class="img-fluid img-produtos" title="<?php the_title() ?>"> 
-                <?php } ?>
+                        <img src="<?php echo wp_get_attachment_url($image); ?>" class="img-fluid img-produtos" title="<?php the_title() ?>">
+                    <?php } ?>
                 </div>
             </div>
             <br><br>
-            <div class="portfolio-description text-justify">                
+            <div class="portfolio-description text-justify">
                 <?php echo get_the_content(); ?>
                 <h1>&ensp;</h1>
                 <a class='btn-pedido' href="/cart/?add-to-cart=<?php echo get_the_ID(); ?>&quantity=1">Comprar</a>
             </div>
         </div>
     </section><!-- End Portfolio Details Section -->
-<br>
+    <br>
 </main><!-- End #main -->
 <?php get_footer(); ?>

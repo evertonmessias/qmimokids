@@ -66,7 +66,7 @@
   </section><!-- End Featured Services Section -->
 
   <!-- ======= Product Section 1 ======= -->
-  <section id="portfolio" class="portfolio section-bg">
+  <section id="product" class="portfolio section-bg">
     <div class="container" data-aos="fade-up">
       <?php
       $categories = get_terms('product_cat', array('order' => 'DESC'));

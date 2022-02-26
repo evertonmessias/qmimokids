@@ -46,7 +46,6 @@ function add_remove_roles()
 add_action('admin_menu', 'add_remove_roles');
 		
 
-
 // ***************** Add style & script for Admin
 function style_and_script()
 {
@@ -64,14 +63,6 @@ function style_and_script()
 }
 add_action('admin_enqueue_scripts', 'style_and_script');
 
-//Rename menu iten Admin
-function wd_admin_menu_rename()
-{
-	//global $menu;
-	//$menu[5][0] = 'Portfolio';
-}
-add_action('admin_menu', 'wd_admin_menu_rename');
-
 
 // ***************** Add About in Menu
 function menu_projetos()
@@ -87,14 +78,3 @@ function function_about()
 }
 add_action('function_about', 'function_about');
 
-
-// ***************** Add Media
-function load_media_files()
-{
-	wp_enqueue_media();
-}
-add_action('admin_enqueue_scripts', 'load_media_files');
-
-
-//************* Add thumbnails
-add_theme_support('post-thumbnails', array('projetos'));
