@@ -78,3 +78,14 @@ add_action('init', 'myprefix_unregister_tags');
 
 //************* Add thumbnails
 add_theme_support('post-thumbnails', array('post'));
+
+
+/************* Change the placeholder image
+add_filter('woocommerce_placeholder_img_src', 'custom_woocommerce_placeholder_img_src');
+function custom_woocommerce_placeholder_img_src( $src ) {
+	$upload_dir = wp_upload_dir();
+	$uploads = untrailingslashit( $upload_dir['baseurl'] );	
+	$src = $uploads . '/2022/02/logo.png';	 
+	return $src;
+}
+*/

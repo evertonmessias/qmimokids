@@ -1,0 +1,10 @@
+2022-02-26T14:23:05+00:00 CRITICAL Uncaught Exception: Invalid product. in /var/www/qmimokids/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 /var/www/qmimokids/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/qmimokids/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(137): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/qmimokids/wp-content/themes/qmimokids/functions.php(89): WC_Product->__construct(177)
+#3 /var/www/qmimokids/wp-includes/class-wp-hook.php(307): custom_woocommerce_placeholder_img_src('https://teste2....')
+#4 /var/www/qmimokids/wp-includes/plugin.php(189): WP_Hook->apply_filters('https://teste2....', Array)
+#5 /var/www/qmimokids/wp-content/plugins/woocommerce/includes/wc-product-functions.php(306): apply_filters('woocommerce_pla...', 'https://teste2....')
+#6 /var/www/qmimokids/wp-content/plugins/woocommerce/includes/wc-product-functions.php(337): wc_placeho in /var/www/qmimokids/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php on line 167
+

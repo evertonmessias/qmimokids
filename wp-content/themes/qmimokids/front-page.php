@@ -94,7 +94,7 @@
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <?php foreach ($categories as $category) {			
+        <?php foreach ($categories as $category) {
           $args = array(
             'post_type' => 'product',
             'product_cat' => $category->slug,
@@ -104,17 +104,18 @@
           while ($loop->have_posts()) {
             $loop->the_post();
             $wc_product = new WC_product(get_the_ID());
-            $array_images = $wc_product->get_gallery_image_ids();                
+            $array_images = $wc_product->get_gallery_image_ids();
         ?>
             <div class="col-lg-4 portfolio-item filter-<?php echo $category->slug; ?>">
-              <img src="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" class="img-fluid" title="<?php echo get_the_title() ?>">
+              <img src="<?php echo wp_get_attachment_url($array_images[0]); ?>" class="img-fluid" title="<?php echo get_the_title() ?>">
               <div class="portfolio-info">
-                <h4><?php the_title() ?></h4>
-                <a href="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo get_the_title() ?>"><i class="bx bx-search"></i></a>
+                <a href="<?php the_permalink() ?>"><h4><?php the_title() ?></h4></a>
+                <a href="<?php echo wp_get_attachment_url($array_images[0]); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo get_the_title() ?>"><i class="bx bx-search"></i></a>
                 <a href="<?php the_permalink() ?>" class="details-link" title="Link"><i class="bx bx-shopping-bag"></i></a>
               </div>
             </div>
-        <?php }wp_reset_postdata();
+        <?php }
+          wp_reset_postdata();
         } ?>
       </div>
     </div>
@@ -147,6 +148,7 @@
           </div>
         <?php
         }
+        wp_reset_postdata();
         ?>
       </div>
 
@@ -174,17 +176,18 @@
             while ($loop->have_posts()) {
               $loop->the_post();
               $wc_product = new WC_product(get_the_ID());
-              $array_images = $wc_product->get_gallery_image_ids(); 
+              $array_images = $wc_product->get_gallery_image_ids();
           ?>
 
               <div class="swiper-slide">
-                <a class="gallery-lightbox" href="<?php echo wp_get_attachment_url( $array_images[0] ); ?>">
-                  <img src="<?php echo wp_get_attachment_url( $array_images[0] ); ?>" class="img-fluid" alt="">
+                <a class="gallery-lightbox" href="<?php echo wp_get_attachment_url($array_images[0]); ?>">
+                  <img src="<?php echo wp_get_attachment_url($array_images[0]); ?>" class="img-fluid" alt="">
                 </a>
                 <p><?php echo get_the_title() ?></p>
-                <a href="<?php the_permalink() ?>" class="btn-link" title="Link">Leia mais</a>
+                <a href="<?php the_permalink() ?>" class="btn-link" title="Link">Comprar</a>
               </div>
           <?php }
+            wp_reset_postdata();
           } ?>
         </div>
         <div class="swiper-pagination"></div>
