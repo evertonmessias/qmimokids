@@ -206,6 +206,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#header .shop{
+  color: #111;
+  margin-left: 30px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#header .shop:hover {
+  text-decoration: none !important;
+  color: #f00;
+  transform: scale(1.5);
+  margin-top: 3px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/

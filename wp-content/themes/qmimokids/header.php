@@ -39,8 +39,8 @@
 	<div id="topbar" class="d-none d-lg-flex align-items-center fixed-top <?php if(is_user_logged_in())echo "bar-logged"; ?>">
 		<div class="container d-flex">
 			<div class="contact-info mr-auto">
-				<i class="icofont-envelope"></i><a target="_blank" href="mailto:<?php echo get_option('home_input_15'); ?>"><?php echo get_option('home_input_15'); ?></a>
-				<i class="bx bxl-whatsapp"></i><a target="_blank" href="https://api.whatsapp.com/send?phone=55<?php echo get_option('home_input_14'); ?>&text=qmimokids"><?php echo get_option('home_input_14'); ?></a>
+				<a target="_blank" href="mailto:<?php echo get_option('home_input_15'); ?>"><i class="icofont-envelope"></i>&nbsp;<?php echo get_option('home_input_15'); ?></a>&emsp;
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=55<?php echo get_option('home_input_14'); ?>&text=qmimokids"><i class="bx bxl-whatsapp"></i>&nbsp;<?php echo get_option('home_input_14'); ?></a>
 			</div>
 			<div class="social-links">				
 				<a target="_blank" href="<?php echo get_option('home_input_18'); ?>" class="facebook"><i class="icofont-facebook"></i></a>
@@ -60,10 +60,9 @@
 					<li class="active"><a href="/">Inicio</a></li>
 					<li><a href="/#product">Produtos</a></li>	
 					<li><a href="/#about">Sobre</a></li>
-					<li><a href="/#contact">Contato</a></li>
-
+					<li><a href="/#contact">Contato</a></li>					
 				</ul>
 			</nav><!-- .nav-menu -->
-
+			<a class="shop" href="/cart"><i class="bx bx-shopping-bag"></i></a>
 		</div>
 	</header><!-- End Header -->
