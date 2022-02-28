@@ -62,7 +62,7 @@
             <div class="col-lg-4 portfolio-item filter-<?php echo $category->slug; ?>">
               <img src="<?php echo wp_get_attachment_url($array_images[0]); ?>" class="img-fluid" title="<?php echo get_the_title() ?>">
               <div class="portfolio-info">
-                <a href="<?php the_permalink() ?>"><h4><?php the_title() ?></h4></a>
+                <a href="<?php the_permalink() ?>"><h4><?php echo get_the_title() ?></h4></a>
                 <a href="<?php echo wp_get_attachment_url($array_images[0]); ?>" data-gall="portfolioGallery" class="venobox preview-link" title="<?php echo get_the_title() ?>"><i class="bx bx-search"></i></a>
                 <a href="<?php the_permalink() ?>" class="details-link" title="Link"><i class="bx bx-shopping-bag"></i></a>
               </div>

@@ -192,6 +192,14 @@
     padding-left: 10px;
 }
 
+.portfolio-info h4{
+    font-size: 15px !important;
+}
+
+.portfolio-info a h4:hover{
+    color: #6badc4 !important;
+}
+
 .woocommerce table.cart img {
     display: none;
 }
