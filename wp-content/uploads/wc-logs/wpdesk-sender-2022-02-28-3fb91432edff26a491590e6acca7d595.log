@@ -1,0 +1,2 @@
+2022-02-28T20:33:46+00:00 DEBUG Sender payload: {"click_action":"no","url":"https:\/\/teste2.evertonm.com","localhost":"no"}
+2022-02-28T20:33:49+00:00 DEBUG Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null}

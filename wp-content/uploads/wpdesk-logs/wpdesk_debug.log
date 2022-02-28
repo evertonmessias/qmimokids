@@ -1,0 +1,2 @@
+[2022-02-28 20:33:46] wpdesk.DEBUG: Sender payload: {"click_action":"no","url":"https:\/\/teste2.evertonm.com","localhost":"no"} {"source":"wpdesk-sender"} []
+[2022-02-28 20:33:49] wpdesk.DEBUG: Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null} {"source":"wpdesk-sender"} []

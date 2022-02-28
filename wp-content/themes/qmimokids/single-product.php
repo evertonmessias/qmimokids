@@ -38,9 +38,10 @@
                 </div>
             </div>
             <br><br>
-            <div class="portfolio-description text-justify">
+            <div class="portfolio-description text-justify">                
                 <?php echo get_the_content(); ?>
                 <h1>&ensp;</h1>
+                <?php echo "<h4 class='center'>Preço: R$ ".$wc_product->get_price()."</h4>"; ?>
                 <a class='btn-pedido' href="/cart/?add-to-cart=<?php echo get_the_ID(); ?>&quantity=1">Comprar</a>
             </div>
         </div>
